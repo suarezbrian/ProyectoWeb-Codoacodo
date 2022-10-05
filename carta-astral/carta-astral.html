@@ -10,6 +10,9 @@
 </head>
 
 <body class="bodyCarta">
+    <div class="loader-img">
+      <div class="loader"></div>
+    </div>
     <header class="header">
       <nav class="nav"> 
         <a href ="/index.html">HOME</a>  
@@ -20,15 +23,25 @@
       </nav>
     </header> 
   <main>
-    <div class="contenedor" id="formulario">
-      <form class="formCarta" action="https://formspree.io/f/mnqrvoyn" method="POST">
+    <div class="contenedor">
+      <form id="formulario" class="formCarta" action="https://formsubmit.co/brian44330@gmail.com" method="POST">
         <div class="formularioContenedor">
 
-          <div class="contenedorInputs">
-          <div class="contenedorLabel">
-            <label for="nombre" class="labelInput">Nombre</label>
+          <div class="contenedorInputs-text">
+
+            <div class="box">
+            <label for="nombre" >Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..."></input>
+            </select>
           </div>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..."></input>
+
+
+          <div class="box">
+        
+            <label for="mail" class="labelInput">Mail</label>
+            <input type="mail" id="mail" name="mail" placeholder="Tu mail..."></input>
+            </select>
+            </div>
           </div>
 
           <div class="contenedorInputs">
@@ -40,17 +53,20 @@
 
           
           <div class="contenedorInputs-date">
-            <div class="contenedorLabel-date">
-            <label for="hora" class="hora">Horario de nacimiento</label>
-            </div>
-            <select id="hora" name="hora">
-            </select>
 
-            <div class="contenedorLabel">
-            <label for="minutos" class="minutos">Minutos de nacimiento</label>
-            </div>
-            <select id="minutos" name="minutos">
+            <div class="box">
+            <label for="hora" >Horario de nacimiento</label>
+            <select  id="selectH" name="hora">
             </select>
+          </div>
+
+
+          <div class="box">
+        
+            <label for="minutos" >Minutos de nacimiento</label>
+            <select  id="selectM" name="minutos">
+            </select>
+            </div>
           </div>
 
           <div class="contenedorInputs">

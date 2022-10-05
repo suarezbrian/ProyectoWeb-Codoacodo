@@ -1,128 +1,142 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  overflow-y: hidden;
+  /* scroll-behavior: smooth; 
+   overflow-y: hidden; */
 }
+
 
 /* navbar */
 
-nav{
+nav {
   width: 100%;
 
-  background-color: rgba(0,0,0, .3);
+  background-color: rgba(0, 0, 0, .3);
   display: flex;
   justify-content: center;
-  align-items:center;
-  
+  align-items: center;
+
   border-bottom: 1px solid rgba(255, 255, 255, .5);
   backdrop-filter: blur(5px);
 
   position: fixed;
   padding-top: 30px;
   padding-bottom: 30px;
-  z-index: 10;
+
+  /*temporal margin top*/
+  margin-top: -5.5%;
+  z-index: 2;
 }
 
-nav a:not(:last-child){
+nav a:not(:last-child) {
   margin-right: 25px;
 }
 
-a{
+a {
   text-decoration: none;
-  color:rgba(255, 255, 255, .9);
-  font-size:large;
+  color: rgba(255, 255, 255, .9);
+  font-size: large;
   transition: color 0.3s ease-in-out;
 }
 
-a:hover{
+a:hover {
   color: #5333ed;
-} 
+}
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],input[type=date], select, textarea {
-    width: 50%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-   
-    
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color:rgba(0, 0, 0, .8);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 30%;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #9b700d;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .contenedor {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-top: 100px;   
-    display:flex; 
-    justify-content: center;    
-    height: 700px;                         
-  }
+input[type=text],
+input[type=date],
+input[type=mail],
+select,
+textarea {
+  width: 50%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
 
-#formulario
-{
-  background: transparent; 
-  background-size:auto; 
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #9b700d;
+}
+
+/* Add a background color and some padding around the form */
+.contenedor {
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;
+  height: 700px;
+  
+
+}
+
+#formulario {
+  background: transparent;
+  background-size: auto;
   background-attachment: fixed;
   color: white;
- 
+
 }
 
-.bodyCarta
-{ 
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/img_galaxy.jpg"); 
-    background-size:cover; 
-    background-attachment: fixed;
+.bodyCarta {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/img_galaxy.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.formularioContenedor
-{
+.formularioContenedor {
   width: 60rem;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   margin-top: 10%;
+  
+
+
+
 
 }
 
-.contenedorInputs
-{
- 
+.contenedorInputs {
+
   display: flex;
   flex-direction: column;
   margin-right: 30%;
   width: 50%;
-  
+
+
 }
 
 
-.contenedor-img 
-{
+.contenedor-img {
   position: absolute;
-  background-color: red;
   top: 15%;
   left: 55%;
   right: 0;
@@ -130,26 +144,58 @@ input[type=text],input[type=date], select, textarea {
   width: 30%;
   height: 60%;
   background: url("/img/horoscope.png");
-  background-size:contain; 
+  background-size: contain;
   animation: rotation 30s infinite linear;
- 
+
 }
 
-@keyframes rotation 
-{
-  from 
-  {
+@keyframes rotation {
+  from {
     transform: rotate(0deg);
   }
-  to 
-  {
+
+  to {
     transform: rotate(359deg);
   }
 }
 
-.contenedorInputs-date
+.contenedorInputs-date {
+  display: flex;
+  gap: 3%;
+  margin-right: 30%;
+  width: 50%;
+
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+#selectH, #selectM{
+ 
+  width: 20rem;
+  
+  
+}
+
+.contenedorInputs-text
+ {
+  display: flex;
+  gap: 3%;
+  margin-right: 30%;
+  width: 50%;
+
+}
+
+.box 
 {
   display: flex;
-  background-color: red;
-  margin-right: 30%;
+  flex-direction: column;
 }
+
+#mail, #nombre
+{
+  width: 20rem;
+}
+

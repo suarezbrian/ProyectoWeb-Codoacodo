@@ -91,7 +91,16 @@ form.addEventListener('submit', validarFormulario);
 
     if(responde.ok)
     {
-        alert("funciono");
+      Swal.fire({
+        title: "<h2 style='color:white'>" + 'Carta Astral' + "</h2>",
+        text: 'Su Carta Astral se envio de forma EXITOSA!!!',
+        imageUrl: 'https://www.infobae.com/new-resizer/PRVp82RbhWdAnp8IFSMGc9tmaZ8=/1200x628/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/4RZL3XNUMBHNPMK6RIQUYBJKVE.png',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Carta Astral',
+        background: 'rgba(54, 51, 59, 0.57)',
+        color: 'white',
+      })
     }
   }
 

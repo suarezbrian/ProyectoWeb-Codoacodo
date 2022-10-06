@@ -5,17 +5,18 @@
   box-sizing: border-box;
 }
 
-section 
+.section 
 {
   position: relative;
-  height: 100%;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   color: #FFF;
+  padding-top: 100px;
 }
 
 .box1 {
-  margin-top: 150px;
+  margin-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
 
@@ -35,91 +36,26 @@ section
   padding-bottom: 20px;
 }
 
-.parallax h1 
-{
-  width: 100%;
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-
-#seccion-1
- {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/img_galaxy.jpg"); 
-  background-size:cover; 
-  background-attachment: fixed;
-  width: 100vw;
-}
-
-/* @media screen and (min-width: 768px) 
-{
-  section h1 
-  {
-    font-size: 8rem;
-  }
-  
-  .parallax h1 
-  {
-    font-size: 4rem;
-  }
-}
-
-/* navbar */
-
-nav{
-  width: 100%;
-
-  background-color: rgba(0,0,0, .3);
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
-  backdrop-filter: blur(5px);
-
-  position: fixed;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  z-index: 10;
-}
-
-nav a:not(:last-child){
-  margin-right: 25px;
-}
-
-a{
-  text-decoration: none;
-  color:rgba(255, 255, 255, .9);
-  font-size:large;
-  transition: color 0.3s ease-in-out;
-}
-
-a:hover{
-  color: #5333ed;
-} 
-
 .slider {
   width: 100%;
-  height: auto;
-  margin: auto;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .slider .slide-track {
   display: flex;
+
   animation: scroll 60s linear infinite;
   width: calc(200px * 24);
 }
 
 .slider .slide {
-  width: 200px;
+  width: 100%;
 }
 
 .slider .slide img {
-  width: 100%;
-
+  width: 90%;
+  height: 100%;
 }
 
 @keyframes scroll {
@@ -129,4 +65,138 @@ a:hover{
   100% {
     transform: translateX(calc(-200px * 12));
   }
+}
+
+h1
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.card-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.card-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  
+}
+
+.card-container .container .card {
+  position: relative;
+  min-width: 550px;
+  height: 380px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+.card-container .container .card:nth-child(1) .box .content a {
+  background: rgba(54, 51, 59, 0.953)
+}
+
+.card-container .container .card:nth-child(2) .box .content a {
+  background: rgba(54, 51, 59, 0.953)
+}
+
+.card-container .container .card:nth-child(3) .box .content a {
+  background: rgba(54, 51, 59, 0.953)
+}
+
+.card-container .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, .4);
+  border: solid rgba(255, 255, 255, 0.349) 1px
+}
+
+.card-container .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.card-container .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.card-container .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-container .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.card-container .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.card-container .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.card-container .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.card-container .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+
+.contacto
+{
+  width: 100%;
+  height: 100vh;
+
 }

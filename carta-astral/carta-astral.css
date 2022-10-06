@@ -56,10 +56,8 @@ input[type=submit]:hover
   border-radius: 5px;
   padding: 20px;
   margin-top: 100px;
-  display: flex;
-  height: 700px;
+  display: flex;  
   
-
 }
 
 #formulario 
@@ -69,13 +67,6 @@ input[type=submit]:hover
   background-attachment: fixed;
   color: white;
 
-}
-
-.bodyCarta 
-{
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/img_galaxy.jpg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .formularioContenedor 
@@ -165,4 +156,11 @@ input[type=submit]:hover
 #mail, #nombre
 {
   width: 20rem;
+}
+
+h1
+{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid white 2px;
 }

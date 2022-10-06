@@ -1,4 +1,11 @@
-footer{
+.pieHome{
+    background: rgb(171, 68, 40);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+  .pieCarta{
     background: rgb(171, 68, 40);
     width: 100%;
     position: absolute;
@@ -12,7 +19,6 @@ footer{
   }
   a,span{
     font-size: 20px;
-   
   }
   
   .fb{

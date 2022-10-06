@@ -1,0 +1,40 @@
+footer{
+    background: rgb(171, 68, 40);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .boxFooter{
+    display: flex;
+    align-self: center;
+    gap: 70px;
+  }
+  a,span{
+    font-size: 20px;
+   
+  }
+  
+  .fb{
+    background: rgb(108, 154, 228);
+    padding: 4px;
+    border-radius: 30px;
+    color: white;
+  }
+  .yt{
+    background: rgb(192, 28, 28);
+    padding: 4px;
+    border-radius: 30px;
+    color: white;
+  }
+  .in{
+    background: rgb(215, 78, 165);
+    padding: 4px;
+    border-radius: 30px;
+    color: white;
+  }
+  .footerC{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }

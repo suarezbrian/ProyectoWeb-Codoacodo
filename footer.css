@@ -14,7 +14,7 @@
     color: white;
     font-size: 15px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
   }
   
@@ -50,4 +50,14 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    
+  }
+
+ 
+  @media only screen and (max-width: 550px) {
+
+    h4, h3
+    {
+      display: none;
+    }
   }

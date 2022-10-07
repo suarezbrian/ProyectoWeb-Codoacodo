@@ -99,8 +99,8 @@ input[type=submit]:hover
   left: 55%;
   right: 0;
   margin: 0;
-  width: 30%;
-  height: 60%;
+  width: 500px;
+  height: 500px;
   background: url("/img/horoscope.png");
   background-size: contain;
   animation: rotation 30s infinite linear;
@@ -164,3 +164,130 @@ h1
   justify-content: center;
   border-bottom: solid white 2px;
 }
+
+
+
+@media only screen and (max-width: 1366px) 
+{
+  .contenedor-img 
+  {
+    top: 170px;
+    left: 890px;
+    width: 400px;
+    height: 400px;
+    background: url("/img/horoscope.png");
+    background-size: contain;
+    animation: rotation 30s infinite linear;
+  }
+  .contenedor 
+  {
+    margin-top: 50px;    
+  }
+  main .section
+  {
+    height: 99vh;
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 370px) 
+{
+  .contenedor-img 
+  {
+    background: url("");
+    animation: rotation 0s infinite linear;
+  }
+  main .section
+  {
+    height: 99vh;
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 800px) 
+{
+  .contenedor-img 
+  {
+    background: url("");
+    animation: rotation 0s infinite linear;
+  }
+  
+  .formularioContenedor 
+  {
+    align-items: flex-start;  
+  }
+  
+  #selectH, #selectM
+  {
+    width: 15rem;
+  }
+
+  #mail, #nombre
+  {
+    width: 15rem;
+  }
+
+  h1
+  {
+    display: flex;
+    justify-content: flex-start;
+    width: 52%;
+    margin-top: 7%;
+  }
+
+  .formularioContenedor 
+  {
+    margin-top: 7%;
+  }
+
+  main .section
+  {
+    height: 99vh;
+    width: 100vh;
+  }
+
+}
+
+@media only screen and (max-width: 550px) { 
+   
+  
+  .contenedor-img 
+  {
+    background: url("");  
+    animation: rotation 0s infinite linear;
+  }
+
+  
+  .formularioContenedor 
+  {
+    align-items: flex-start;  
+  }
+  
+  #selectH, #selectM
+  {
+    width: 15rem;
+  }
+
+  #mail, #nombre
+  {
+    width: 15rem;
+  }
+
+  h1
+  {
+    display: flex;
+    justify-content: flex-start;
+    width: 52%;
+  }
+
+  .formularioContenedor 
+  {
+    margin-top: 7%;
+  }
+  
+  main .section
+  {
+    height: 99vh;
+    width: 100vh;
+  }
+} 

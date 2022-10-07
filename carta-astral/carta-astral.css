@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; 
+   overflow-y: hidden; */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+input[type=date],
+input[type=mail],
+select,
+textarea 
+{
+  width: 50%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] 
+{
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover 
+{
+  background-color: #9b700d;
+}
+
+/* Add a background color and some padding around the form */
+.contenedor 
+{
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;  
+  
+}
+
+#formulario 
+{
+  background: transparent;
+  background-size: auto;
+  background-attachment: fixed;
+  color: white;
+
+}
+
+.formularioContenedor 
+{
+  width: 60rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+
+}
+
+.contenedorInputs 
+{
+
+  display: flex;
+  flex-direction: column;
+  margin-right: 30%;
+  width: 50%;
+
+
+}
+
+
+.contenedor-img 
+{
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  right: 0;
+  margin: 0;
+  width: 30%;
+  height: 60%;
+  background: url("/img/horoscope.png");
+  background-size: contain;
+  animation: rotation 30s infinite linear;
+
+}
+
+@keyframes rotation 
+{
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.contenedorInputs-date 
+{
+  display: flex;
+  gap: 3%;
+  margin-right: 30%;
+  width: 50%;
+
+}
+
+.box 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#selectH, #selectM
+{
+  width: 20rem;
+}
+
+.contenedorInputs-text
+ {
+  display: flex;
+  gap: 3%;
+  margin-right: 30%;
+  width: 50%;
+
+}
+
+.box 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#mail, #nombre
+{
+  width: 20rem;
+}
+
+h1
+{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid white 2px;
+}

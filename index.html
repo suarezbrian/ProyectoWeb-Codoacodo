@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="/header/header.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="/contacto/contacto.css">
   <title>Home - Astral Page</title>
-
+  <link rel="icon" type="image/x-icon" href="/img/astrospeak.ico">
+ <link rel="icon" type="image/x-icon" href="/img/astrospeak.ico">
 </head>
 
 <body class="bodyCarta" id="body">
@@ -177,8 +179,39 @@
           </div>    -->
     </section class="section">
 
-    <section class="section" id="contacto">
-      
+    <section class="section" id="contacto"> 
+          <h2>CONTACTO</h2>     
+          <section class="form_wrap">
+      <section class="cantact_info">
+          <section class="info_title">
+             <div> <img src="/img/horoscope.png" class="imagen"> </div>
+          </section>
+          <section class="info_items">
+              <p><span class="fa fa-envelope"></span> astro-page.contact@gmail.com</p>
+              <p><span class="fa fa-mobile"></span> +54(011) 4242-32551</p>
+          </section>
+      </section>
+
+      <form action="" class="form_contact">
+          <h2>Envianos un mensaje</h2>
+          <div class="user_info">
+              <label for="nombre">Nombres *</label>
+              <input type="text" id="nombre">
+
+              <label for="celular">Telefono / Celular</label>
+              <input type="text" id="celular">
+
+              <label for="mail">Correo electronico *</label>
+              <input type="text" id="mail">
+
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje"></textarea>
+
+              <input type="button" value="Enviar Mensaje" id="btnSend" onclick="validarFormulario()">
+          </div>
+      </form>
+
+  </section>
     </section>
 
   </main>
@@ -214,6 +247,8 @@
 
   </footer>
   <script src="/header/header.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/contacto/contacto.js"></script>
 </body>
 
 </html>

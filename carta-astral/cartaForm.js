@@ -58,26 +58,26 @@ form.addEventListener('submit', validarFormulario);
     // Valido el nombre.
     let nombre = document.getElementById('nombre').value;
     if(nombre.length == 0) {
-      alert('No has escrito nada en el usuario');
+      sweetError('El campo nombre esta vacio!.');
       return;
     }
     else if(nombre.length > 10)
     {
-      alert('El nombre es demaciado largo');
+      sweetError('El nombre es demaciado largo.');
       return;
     }
 
     // Valido el mail
     let mail = document.getElementById('mail').value;
     if (!emailRegex.test(mail)) {
-      alert('El mail no es válida');
+      sweetError('El mail no es valido.');
       return;
     }
 
     // Validao el pais
     let pais = document.getElementById('country').value;
     if (pais.length > 2) {
-      alert('No ha seleccionado ningun país.');
+      sweetError('No ha seleccionado ningun país.');
       return;
     }
 
@@ -105,3 +105,12 @@ form.addEventListener('submit', validarFormulario);
   }
 
 
+
+function sweetError(valor)
+{
+    Swal.fire({
+        icon: 'warning',
+        title: 'Oops...',
+        text: valor,
+      })
+}

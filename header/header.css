@@ -1,6 +1,6 @@
 .bodyCarta 
 {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/img_galaxy.jpg");
+  background:  url("/img/Twilight-0.7s-1920px.svg");
   background-size: cover;
   background-attachment: fixed;
 }

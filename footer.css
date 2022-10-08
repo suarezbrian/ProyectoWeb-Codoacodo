@@ -1,14 +1,20 @@
 .pieHome{
-    background: rgb(171, 68, 40);
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 15px;
     width: 100%;
     position: relative;
     bottom: 0;
   }
 
   .pieCarta{
-    background: rgb(171, 68, 40);
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 15px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
   }
   
@@ -19,6 +25,7 @@
   }
   a,span{
     font-size: 20px;
+ 
   }
   
   .fb{
@@ -43,4 +50,14 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    
+  }
+
+ 
+  @media only screen and (max-width: 550px) {
+
+    h4, h3
+    {
+      display: none;
+    }
   }

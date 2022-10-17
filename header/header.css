@@ -77,3 +77,24 @@
     width: 640px;
   }
 } */
+
+
+@media only screen and (max-width: 1366px) 
+{
+  .sidebar {
+    padding-top: 150px; 
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+  }
+
+  .sidebar a {
+    padding: 20px 10px 30px 12px;
+    border-bottom: rgba(255, 255, 255, 0.162) solid 2px;
+    color: white;
+   
+  }
+
+  .openbtn:hover {
+    background-color: rgba(0, 0, 0, .4);
+  }
+}

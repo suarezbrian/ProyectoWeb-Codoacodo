@@ -57,7 +57,18 @@ function cerrarSideBar()
 
 function abrirSideBar()
 {
-  document.getElementById("mySidebar").style.width = "20%";
-  document.getElementById("header").style.marginLeft = "20%";
-  document.getElementById("mySidebar").style.borderRight = "solid white 1px"; 
+  let mql = window.matchMedia('(max-width: 1366px)');  
+
+  if(mql.matches == true)
+  {
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("header").style.marginLeft = "0%";
+  }
+  else
+  {
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("header").style.marginLeft = "20%";
+    document.getElementById("mySidebar").style.borderRight = "solid white 1px"; 
+  }
+
 }

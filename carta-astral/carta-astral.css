@@ -208,8 +208,13 @@ h1
 {
   .contenedor-img 
   {
-    background: url("");
-    animation: rotation 0s infinite linear;
+    top: 170px;
+    left: 650px;
+    width: 400px;
+    height: 400px;
+    background: url("/img/horoscope.png");
+    background-size: contain;
+    animation: rotation 30s infinite linear;
   }
   
   .formularioContenedor 
@@ -260,7 +265,7 @@ h1
   
   .formularioContenedor 
   {
-    align-items: flex-start;  
+    align-items: flex-start;      
   }
   
   #selectH, #selectM

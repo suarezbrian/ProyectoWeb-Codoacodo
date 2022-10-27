@@ -248,3 +248,41 @@ h2
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 1800px) 
+{
+    .section
+    {       
+        flex-wrap: wrap;
+        height: 1300px;
+    }
+    #contacto {
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1366px) 
+{
+    .section
+    {       
+        flex-wrap: wrap;
+        height: 1300px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1240px) 
+{
+    .section
+    {       
+        flex-wrap: wrap;
+        height: 1300px;
+    }
+
+    #contacto {
+        margin-top: 500px;
+    }
+
+}

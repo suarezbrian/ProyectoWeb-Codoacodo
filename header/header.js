@@ -17,7 +17,7 @@ function openNav()
     {
       if(index == 0 && element.id == 'homeSideBar')
       {
-        element.href = "#section";
+        element.href = "/index.html";
       }
       
     });

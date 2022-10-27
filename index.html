@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="/header/header.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="/contacto/contacto.css">
   <title>Home - Astral Page</title>
-
+  <link rel="icon" type="image/x-icon" href="/img/astrospeak.ico">
+ 
 </head>
 
 <body class="bodyCarta" id="body">
@@ -20,7 +22,7 @@
     <br>
     <a href="">HOROSCOPO</a>
     <a href="/carta-astral/carta-astral.html">CARTA&nbsp&nbspASTRAL</a>
-    <a href="">SOBRE&nbspNOSOTROS</a>
+    <a href="#profile">SOBRE&nbspNOSOTROS</a>
     <a href="#contacto">CONTACTO</a>
   </div>
   <header class="header" id="header">
@@ -177,18 +179,52 @@
           </div>    -->
     </section class="section">
 
-    <section class="section" id="contacto">
-      
+    <section class="section" id="contacto"> 
+          <h2>CONTACTO</h2>     
+          <section class="form_wrap">
+      <section class="cantact_info">
+          <section class="info_title">
+             <div> <img src="/img/horoscope.png" class="imagen"> </div>
+          </section>
+          <section class="info_items">
+              <p><span class="fa fa-envelope"></span> astro-page.contact@gmail.com</p>
+              <p><span class="fa fa-mobile"></span> +54(011) 4242-32551</p>
+          </section>
+      </section>
+
+      <form action="" class="form_contact">
+          <h2>Envianos un mensaje</h2>
+          <div class="user_info">
+              <label for="nombre">Nombres *</label>
+              <input type="text" id="nombre">
+
+              <label for="celular">Telefono / Celular</label>
+              <input type="text" id="celular">
+
+              <label for="mail">Correo electronico *</label>
+              <input type="text" id="mail">
+
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje"></textarea>
+
+              <input type="button" value="Enviar Mensaje" id="btnSend" onclick="validarFormulario()">
+          </div>
+      </form>
+
+  </section>
     </section>
 
   </main>
   <footer class="pieHome">
     <div class="footerC">
-      <h3> Astro</h3>
+      <h3> Astral Page</h3>
       <div class="boxFooter">
+        <section class="profile" id="profile">
         <h4> Sobre Nosotros <br>
           Creamos esta pagina para que se disfrute<br>
           y le sea agradable en su recorrido.</h4>
+        </section>
+          
 
         <div class="redes">
           <h4>Siguenos en:</h4>
@@ -196,6 +232,7 @@
           <a href="https://es-la.facebook.com/"><span class="fb"><i class="fa-brands fa-facebook"></i></span></a>
           <a href="https://www.youtube.com/"><span class="yt"><i class="fa-brands fa-youtube"></i></span></a>
           <a href="https://www.instagram.com/"><span class="in"><i class="fa-brands fa-instagram"></i></span></a>
+           
         </div>
 
         <br>
@@ -206,7 +243,8 @@
 
           <br>
           <p>Copyright@2022 Todos los Derechos Reservados</p>
-          <p>Terminos y condiciones</p>
+          <a href="Terminos.html"style="text-decoration:none">
+            <p>Terminos y condiciones</p>
         </div>
       </div>
 
@@ -214,6 +252,8 @@
 
   </footer>
   <script src="/header/header.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/contacto/contacto.js"></script>
 </body>
 
 </html>

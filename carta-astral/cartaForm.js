@@ -63,7 +63,7 @@ form.addEventListener('submit', validarFormulario);
     }
     else if(nombre.length > 10)
     {
-      sweetError('El nombre es demaciado largo.');
+      sweetError('El nombre es demasiado largo.');
       return;
     }
 
